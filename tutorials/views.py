@@ -28,7 +28,7 @@ class index(APIView):
         queryset = Tutorial.objects.all()
         return Response({'tutorials': queryset})
 
-
+ 
 class list_all_tutorials(APIView):
     renderer_classes = [TemplateHTMLRenderer]
     template_name = 'tutorials/tutorial_list.html'
